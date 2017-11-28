@@ -9,7 +9,7 @@ import arping, checkList
 @click.option('--mask', '-m', default = '24', help = '(1-32)You can set mask range directly with this parameter.')
 
 def main(interface, mask):
-    ''' This scripts arping your lan network '''
+    ''' Check your LAN for unknown devices.'''
 
     interfaces = gi.getInterfaces()
 
