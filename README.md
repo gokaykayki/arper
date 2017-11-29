@@ -38,6 +38,7 @@ sudo python arper.py
 sudo python arper.py -i wlp2s0
 sudo python arper.py -m 30
 sudo python arper.py -i wlp2s0 -m 30
+sudo python arper.py -l
 ```
 or
 
@@ -46,4 +47,5 @@ sudo arper
 sudo arper -i wlp2s0
 sudo arper -m 30
 sudo arper -i wlp2s0 -m 30
+sudo arper -l
 ```
