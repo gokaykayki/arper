@@ -3,7 +3,7 @@ Check your LAN for unknowns devices.
 
 ## Prerequisites
 
-This script uses the `scapy` library. You can install they with `pip` :
+This script uses the `scapy` library. You can install it with `pip` :
 
 ```
 pip install scapy
