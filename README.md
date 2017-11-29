@@ -3,16 +3,15 @@ Check your LAN for unknowns devices.
 
 ## Prerequisites
 
-This script uses `scapy` and `click` library. You can install they with `pip` :
+This script uses the `scapy` library. You can install they with `pip` :
 
 ```
 pip install scapy
-pip install click
 ```
 
 ## How to use ?
 
-Run `arper.py` file with root privilages :
+Run `main.py` file with root privilages :
 
 ```
 sudo python main.py
@@ -34,11 +33,11 @@ sudo python setup.py install
 
 ## Examples
 ```
-sudo python arper.py
-sudo python arper.py -i wlp2s0
-sudo python arper.py -m 30
-sudo python arper.py -i wlp2s0 -m 30
-sudo python arper.py -l
+sudo python main.py
+sudo python main.py -i wlp2s0
+sudo python main.py -m 30
+sudo python main.py -i wlp2s0 -m 30
+sudo python main.py -l
 ```
 or
 

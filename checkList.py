@@ -119,8 +119,12 @@ def check(onlineMacs):
         f = open("macList.txt", "w")
         f.writelines(txtList)
         f.close
+        userhome = os.path.expanduser('~')
+        username = os.path.split(userhome)[-1]
+        os.popen('chown {0} macList.txt'.format(username))
+        os.popen('chgrp {0} macList.txt'.format(username))
         print('Caught this error: ' + repr(error))
-    finally:
+    else:
         f = open("macList.txt", "w+")
         f.writelines(newTxtList)
         f.seek(0)
