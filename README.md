@@ -30,6 +30,8 @@ sudo python setup.py install
 
 `-m` or `--mask`: Set your mask range (Default range: 24)
 
+`-l` or `--log`: You can see log file.
+
 ## Examples
 ```
 sudo python arper.py
