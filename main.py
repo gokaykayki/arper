@@ -1,7 +1,10 @@
 # -*- coding: utf-8 -*-
-import argparse, os
+import argparse, os, sys
 import getInterfaces as gi
 import arping, checkList
+
+if sys.version_info >= (3,0):
+    sys.exit('\n\n###  This script may not work properly in Python 3.0 and newer. It is recommended to use Python 2.7.')
 
 def main():
     parser = argparse.ArgumentParser()

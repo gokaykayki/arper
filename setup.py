@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-import sys
-import os
+import sys, os
 from setuptools import setup
 
 def read(*fname):
