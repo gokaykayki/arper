@@ -34,8 +34,8 @@ def main():
             while (int(args.mask) >= 33 or int(args.mask) <= 0):
                 args.mask = raw_input('Please enter valid mask(1-32): ')
         else:
+            print("--- Your available interfaces ---")
             for i in range(len(interfaces)):
-            	print("--- Your available interfaces ---")
             	print("----- " + list(interfaces.keys())[i] + ": " + list(interfaces.values())[i])
 
             while (args.interface not in interfaces):
