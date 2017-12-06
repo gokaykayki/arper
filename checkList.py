@@ -64,10 +64,6 @@ def check(onlineMacs):
         except (OSError, IOError) as e:
             if getattr(e, 'errno', 0) == errno.ENOENT:
               f = open('macList.txt', 'w+')
-              userhome = os.path.expanduser('~')
-              username = os.path.split(userhome)[-1]
-              os.popen('chown {0} macList.txt'.format(username))
-              os.popen('chgrp {0} macList.txt'.format(username))
 
         txtList = f.readlines()
         macs = list(onlineMacs.keys())
@@ -78,11 +74,13 @@ def check(onlineMacs):
         lenMacs = len(macs)
         lenTxtList = len(txtList)
         addMacsCompare = []
+        iMAC = ""
+        iIP = ""
 
         for i in txtList:
+            iMAC = i.split("|")[0]
+            iIP = i.split("|")[1].split("\n")[0]
             for j in macs:
-                iMAC = i.split("|")[0]
-                iIP = i.split("|")[1].split("\n")[0]
                 if(iMAC == j and iIP == onlineMacs[j]):
                     newTxtList.append(i)
                     addMacsCompare.append(j)
