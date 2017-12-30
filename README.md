@@ -3,10 +3,12 @@ Check your LAN for unknowns devices.
 
 ## Prerequisites
 
-This script uses the `scapy` library. You can install it with `pip` :
+This script uses the `scapy`, `setuptools` and `netifaces` library. You can install they with `pip` :
 
 ```
 pip install scapy
+pip install netifaces
+pip install setuptools
 ```
 
 ## How to use ?
